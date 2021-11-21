@@ -142,8 +142,8 @@ export class LcuWatcher {
         console.warn(`[watcher] fetch lcu status failed`);
         this.hidePopup();
       }
-    } catch (_) {
-      console.log(`[watcher] [cmd] lcu is not active`);
+    } catch (err) {
+      console.log(`[watcher] [cmd] lcu is not active`, err);
     }
   };
 
